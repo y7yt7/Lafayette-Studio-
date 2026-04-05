@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lafayette Studio | Momen Berharga, Terbingkai Sempurna</title>
+    
+    <!-- Google Fonts: Playfair Display (Serif) & Lato (Sans-serif) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#4A3219',   /* Cokelat Tua */
+                            primary: '#7B5C40', /* Moka/Cokelat */
+                            light: '#D9C8B4',   /* Cokelat Muda */
+                            cream: '#F9F6F0',   /* Krem */
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['Lato', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans text-gray-800 antialiased bg-white">
+
+    <!-- Header / Navbar -->
+    <header class="fixed w-full top-0 z-50 bg-white/95 backdrop-blur-sm shadow-sm transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="#" class="flex items-center gap-2">
+                        <img src="61219.jpg" alt="Lafayette Logo" class="h-14 w-auto mix-blend-multiply object-contain">
+                        <span class="font-serif font-bold text-2xl text-brand-dark hidden sm:block">Lafayette</span>
+                    </a>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <nav class="hidden md:flex space-x-8 items-center">
+                    <a href="#home" class="text-gray-600 hover:text-brand-primary transition-colors text-sm uppercase tracking-wider font-semibold">Home</a>
+                    <a href="#services" class="text-gray-600 hover:text-brand-primary transition-colors text-sm uppercase tracking-wider font-semibold">Services</a>
+                    <a href="#portfolio" class="text-gray-600 hover:text-brand-primary transition-colors text-sm uppercase tracking-wider font-semibold">Portfolio</a>
+                    <a href="#attire" class="text-gray-600 hover:text-brand-primary transition-colors text-sm uppercase tracking-wider font-semibold">Attire</a>
+                    <a href="#branches" class="text-gray-600 hover:text-brand-primary transition-colors text-sm uppercase tracking-wider font-semibold">Branches</a>
+                    <a href="#branches" class="bg-brand-dark text-white px-6 py-2.5 rounded-full hover:bg-brand-primary transition-all duration-300 text-sm uppercase tracking-wider font-bold shadow-lg hover:shadow-xl">Book Now</a>
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-gray-600 hover:text-brand-dark focus:outline-none">
+                        <i data-lucide="menu" class="w-6 h-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Panel -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100">
+            <div class="px-4 pt-2 pb-6 space-y-1 shadow-lg">
+                <a href="#home" class="block px-3 py-3 text-base font-medium text-gray-700 hover:text-brand-primary hover:bg-brand-cream rounded-md">Home</a>
+                <a href="#services" class="block px-3 py-3 text-base font-medium text-gray-700 hover:text-brand-primary hover:bg-brand-cream rounded-md">Services</a>
+                <a href="#portfolio" class="block px-3 py-3 text-base font-medium text-gray-700 hover:text-brand-primary hover:bg-brand-cream rounded-md">Portfolio</a>
+                <a href="#attire" class="block px-3 py-3 text-base font-medium text-gray-700 hover:text-brand-primary hover:bg-brand-cream rounded-md">Attire</a>
+                <a href="#branches" class="block px-3 py-3 text-base font-medium text-gray-700 hover:text-brand-primary hover:bg-brand-cream rounded-md">Branches</a>
+                <a href="#branches" class="block px-3 py-3 mt-4 text-center text-base font-bold text-white bg-brand-dark hover:bg-brand-primary rounded-md">Book Now</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative min-h-screen flex items-center justify-center pt-20">
+        <!-- Background Image with Overlay -->
+        <div class="absolute inset-0 z-0">
+            <!--  -->
+            <img src="https://images.unsplash.com/photo-1542037104857-ffbb0b9155fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="Family Studio Portrait" class="w-full h-full object-cover" />
+            <div class="absolute inset-0 bg-gradient-to-r from-brand-dark/90 via-brand-dark/70 to-transparent"></div>
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+            <div class="max-w-2xl text-white">
+                <span class="uppercase tracking-[0.2em] text-brand-light text-sm font-bold mb-4 block">Lafayette Studio</span>
+                <h1 class="font-serif text-5xl md:text-6xl lg:text-7xl leading-tight mb-6">Momen Berharga,<br><span class="italic text-brand-light">Terbingkai Sempurna.</span></h1>
+                <p class="text-lg md:text-xl text-gray-200 mb-10 font-light leading-relaxed">
+                    Studio foto premium di Banjarmasin & Banjarbaru. Mulai dari Self Photo, Photo Box, hingga Profesional Studio, ciptakan memori tak terlupakan bersama kami.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="https://wa.me/6285216962962" target="_blank" class="flex items-center justify-center gap-2 bg-brand-primary text-white px-8 py-4 rounded-full hover:bg-white hover:text-brand-dark transition-all duration-300 font-bold tracking-wide">
+                        <i data-lucide="map-pin" class="w-5 h-5"></i>
+                        Booking Banjarmasin
+                    </a>
+                    <a href="https://wa.me/6285212350224" target="_blank" class="flex items-center justify-center gap-2 bg-transparent border border-white text-white px-8 py-4 rounded-full hover:bg-white hover:text-brand-dark transition-all duration-300 font-bold tracking-wide">
+                        <i data-lucide="map-pin" class="w-5 h-5"></i>
+                        Booking Banjarbaru
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-24 bg-brand-cream">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="font-serif text-4xl text-brand-dark mb-4">Layanan Kami</h2>
+                <div class="w-24 h-1 bg-brand-primary mx-auto mb-6 rounded-full"></div>
+                <p class="text-gray-600">Pilihan layanan fotografi terbaik yang dirancang khusus untuk memenuhi setiap kebutuhan dokumentasi Anda dengan standar premium.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 group border border-gray-100">
+                    <div class="w-14 h-14 bg-brand-cream text-brand-primary rounded-xl flex items-center justify-center mb-6 group-hover:bg-brand-primary group-hover:text-white transition-colors duration-300">
+                        <i data-lucide="camera" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-brand-dark mb-3">Professional Studio</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Sesi foto eksklusif bersama fotografer profesional. Cocok untuk Keluarga, Wisuda, Prewedding, dan Foto Profil elegan.</p>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 group border border-gray-100">
+                    <div class="w-14 h-14 bg-brand-cream text-brand-primary rounded-xl flex items-center justify-center mb-6 group-hover:bg-brand-primary group-hover:text-white transition-colors duration-300">
+                        <i data-lucide="scan-face" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-brand-dark mb-3">Self Photo Studio</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Bebas berekspresi dengan remote di tangan Anda. Privasi penuh tanpa fotografer, hasil tetap berkualitas tinggi.</p>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 group border border-gray-100">
+                    <div class="w-14 h-14 bg-brand-cream text-brand-primary rounded-xl flex items-center justify-center mb-6 group-hover:bg-brand-primary group-hover:text-white transition-colors duration-300">
+                        <i data-lucide="image" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-brand-dark mb-3">Photo Box</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Keseruan instan bersama teman atau pasangan. Cepat, seru, dengan template estetik yang bisa langsung dicetak.</p>
+                </div>
+
+                <!-- Service 4 -->
+                <div id="attire" class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 group border border-gray-100 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 bg-brand-light text-brand-dark text-xs font-bold px-3 py-1 rounded-bl-lg">NEW</div>
+                    <div class="w-14 h-14 bg-brand-cream text-brand-primary rounded-xl flex items-center justify-center mb-6 group-hover:bg-brand-primary group-hover:text-white transition-colors duration-300">
+                        <i data-lucide="shirt" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-brand-dark mb-3">Lafayette Attire</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Solusi praktis untuk tampil memukau. Menyewakan pakaian kebaya, jas lengkap, dan dress untuk kebutuhan foto Anda.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+                <div class="max-w-2xl">
+                    <h2 class="font-serif text-4xl text-brand-dark mb-4">Karya Kami</h2>
+                    <div class="w-24 h-1 bg-brand-primary mb-6 rounded-full"></div>
+                    <p class="text-gray-600">Jelajahi potret-potret kebahagiaan yang telah kami abadikan. Dari nuansa hangat keluarga hingga romansa pasangan.</p>
+                </div>
+                <a href="https://instagram.com/lafayettestudio.id" target="_blank" class="inline-flex items-center gap-2 text-brand-primary hover:text-brand-dark font-bold transition-colors">
+                    Lihat Lebih Banyak di Instagram <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                </a>
+            </div>
+
+            <!-- Image Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!--  -->
+                <div class="group relative rounded-2xl overflow-hidden aspect-[4/5] cursor-pointer">
+                    <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Family Portrait" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-8">
+                        <span class="text-brand-light font-bold tracking-wider text-sm mb-2">FAMILY STUDIO</span>
+                        <h3 class="text-white font-serif text-2xl">Kehangatan Keluarga</h3>
+                    </div>
+                </div>
+
+                <!--  -->
+                <div class="group relative rounded-2xl overflow-hidden aspect-[4/5] cursor-pointer">
+                    <img src="https://images.unsplash.com/photo-1589156229687-496a31ad1d1f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Hijab Portrait" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-8">
+                        <span class="text-brand-light font-bold tracking-wider text-sm mb-2">GRADUATION & PROFILE</span>
+                        <h3 class="text-white font-serif text-2xl">Elegan & Memukau</h3>
+                    </div>
+                </div>
+
+                <!--  -->
+                <div class="group relative rounded-2xl overflow-hidden aspect-[4/5] cursor-pointer md:col-span-2 lg:col-span-1">
+                    <img src="https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Couple Portrait" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-8">
+                        <span class="text-brand-light font-bold tracking-wider text-sm mb-2">PREWEDDING</span>
+                        <h3 class="text-white font-serif text-2xl">Momen Romantis</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Branches & Booking Section -->
+    <section id="branches" class="py-24 bg-brand-cream">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="font-serif text-4xl text-brand-dark mb-4">Pilih Cabang Terdekat</h2>
+                <div class="w-24 h-1 bg-brand-primary mx-auto mb-6 rounded-full"></div>
+                <p class="text-gray-600">Lafayette Studio hadir di dua kota untuk melayani Anda. Hubungi admin kami untuk informasi jadwal dan melakukan reservasi.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                <!-- Branch Banjarmasin -->
+                <div class="bg-white rounded-3xl p-8 md:p-10 shadow-lg border-t-4 border-brand-primary relative overflow-hidden">
+                    <div class="absolute top-0 right-0 opacity-5">
+                        <i data-lucide="camera" class="w-48 h-48 -mr-10 -mt-10"></i>
+                    </div>
+                    <div class="relative z-10">
+                        <div class="inline-block bg-brand-cream text-brand-primary px-4 py-1.5 rounded-full text-sm font-bold tracking-wider mb-6">
+                            LAFAYETTE BANJARMASIN
+                        </div>
+                        
+                        <div class="space-y-6 mb-8">
+                            <div class="flex items-start gap-4">
+                                <div class="w-10 h-10 rounded-full bg-brand-cream flex items-center justify-center shrink-0 mt-1 text-brand-primary">
+                                    <i data-lucide="map-pin" class="w-5 h-5"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 mb-1">Alamat</h4>
+                                    <p class="text-gray-600 text-sm leading-relaxed">Jl. Sultan Adam No.1<br>Banjarmasin, Kalimantan Selatan</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start gap-4">
+                                <div class="w-10 h-10 rounded-full bg-brand-cream flex items-center justify-center shrink-0 mt-1 text-brand-primary">
+                                    <i data-lucide="clock" class="w-5 h-5"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 mb-1">Jam Operasional</h4>
+                                    <p class="text-gray-600 text-sm">Setiap Hari: 09.00 - 21.00 WITA</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="https://wa.me/6285216962962" target="_blank" class="block w-full text-center bg-brand-dark text-white py-4 rounded-xl font-bold hover:bg-brand-primary transition-colors duration-300 shadow-md hover:shadow-lg">
+                            <i data-lucide="message-circle" class="w-5 h-5 inline-block mr-2 -mt-1"></i> WA Banjarmasin
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Branch Banjarbaru -->
+                <div class="bg-white rounded-3xl p-8 md:p-10 shadow-lg border-t-4 border-brand-primary relative overflow-hidden">
+                    <div class="absolute top-0 right-0 opacity-5">
+                        <i data-lucide="camera" class="w-48 h-48 -mr-10 -mt-10"></i>
+                    </div>
+                    <div class="relative z-10">
+                        <div class="inline-block bg-brand-cream text-brand-primary px-4 py-1.5 rounded-full text-sm font-bold tracking-wider mb-6">
+                            LAFAYETTE BANJARBARU
+                        </div>
+                        
+                        <div class="space-y-6 mb-8">
+                            <div class="flex items-start gap-4">
+                                <div class="w-10 h-10 rounded-full bg-brand-cream flex items-center justify-center shrink-0 mt-1 text-brand-primary">
+                                    <i data-lucide="map-pin" class="w-5 h-5"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 mb-1">Alamat</h4>
+                                    <p class="text-gray-600 text-sm leading-relaxed">Jl. A. Yani No.09 Km.35<br>Banjarbaru, Kalimantan Selatan</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start gap-4">
+                                <div class="w-10 h-10 rounded-full bg-brand-cream flex items-center justify-center shrink-0 mt-1 text-brand-primary">
+                                    <i data-lucide="clock" class="w-5 h-5"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 mb-1">Jam Operasional</h4>
+                                    <p class="text-gray-600 text-sm">Setiap Hari: 09.00 - 21.00 WITA</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="https://wa.me/6285212350224" target="_blank" class="block w-full text-center bg-brand-dark text-white py-4 rounded-xl font-bold hover:bg-brand-primary transition-colors duration-300 shadow-md hover:shadow-lg">
+                            <i data-lucide="message-circle" class="w-5 h-5 inline-block mr-2 -mt-1"></i> WA Banjarbaru
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brand-dark text-brand-cream py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 items-center text-center md:text-left">
+                
+                <!-- Footer Brand -->
+                <div class="flex flex-col items-center md:items-start">
+                    <!-- Menggunakan gambar logo namun di invert/brightness jika perlu, atau cukup inisial agar kontras -->
+                    <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mb-6 overflow-hidden">
+                        <img src="61219.jpg" alt="Lafayette" class="w-full h-full object-cover mix-blend-multiply opacity-90 p-2">
+                    </div>
+                    <h3 class="font-serif text-2xl font-bold mb-2">Lafayette Studio</h3>
+                    <p class="text-brand-light text-sm">Momen Berharga, Terbingkai Sempurna.</p>
+                </div>
+
+                <!-- Quick Links & Contact -->
+                <div class="flex flex-col items-center md:items-start">
+                    <h4 class="font-bold tracking-wider mb-6 uppercase text-sm">Informasi</h4>
+                    <ul class="space-y-3 text-brand-light text-sm">
+                        <li><a href="#services" class="hover:text-white transition-colors">Layanan & Harga</a></li>
+                        <li><a href="#attire" class="hover:text-white transition-colors">Sewa Pakaian (Attire)</a></li>
+                        <li><a href="#branches" class="hover:text-white transition-colors">Lokasi Cabang</a></li>
+                        <li class="pt-4 flex items-center justify-center md:justify-start gap-2">
+                            <i data-lucide="clock" class="w-4 h-4"></i> Buka Setiap Hari (09.00 - 21.00)
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Social Media -->
+                <div class="flex flex-col items-center md:items-start">
+                    <h4 class="font-bold tracking-wider mb-6 uppercase text-sm">Ikuti Kami</h4>
+                    <div class="space-y-4">
+                        <a href="https://instagram.com/lafayettestudio.id" target="_blank" class="flex items-center gap-3 text-brand-light hover:text-white transition-colors group">
+                            <div class="w-10 h-10 rounded-full border border-brand-primary flex items-center justify-center group-hover:bg-brand-primary transition-colors">
+                                <i data-lucide="instagram" class="w-5 h-5"></i>
+                            </div>
+                            <span>@lafayettestudio.id</span>
+                        </a>
+                        <a href="https://instagram.com/lafayette.attire" target="_blank" class="flex items-center gap-3 text-brand-light hover:text-white transition-colors group">
+                            <div class="w-10 h-10 rounded-full border border-brand-primary flex items-center justify-center group-hover:bg-brand-primary transition-colors">
+                                <i data-lucide="instagram" class="w-5 h-5"></i>
+                            </div>
+                            <span>@lafayette.attire</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="border-t border-brand-primary/50 mt-16 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-brand-light">
+                <p>&copy; 2024 Lafayette Studio. All rights reserved.</p>
+                <p>Designed with <span class="text-red-400">♥</span> for your moments</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Inisialisasi ikon Lucide
+        lucide.createIcons();
+
+        // Mobile Menu Toggle
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        // Tutup menu mobile saat link diklik
+        const mobileLinks = menu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+            });
+        });
+
+        // Navbar styling saat scroll
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 10) {
+                navbar.classList.add('shadow-md');
+                navbar.classList.replace('bg-white/95', 'bg-white');
+            } else {
+                navbar.classList.remove('shadow-md');
+                navbar.classList.replace('bg-white', 'bg-white/95');
+            }
+        });
+    </script>
+</body>
+</html>
+
